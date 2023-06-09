@@ -184,7 +184,7 @@ const getChatbotStyles = async () => {
   document.body.appendChild(chatButton)
 
   if (styles.chat_icon) {
-    USER_ADDED_CHAT_ICON = `<img src="https://impact-backend.bfix.dev/storage/v1/object/public/chat-icons/${styles.chat_icon}" style='width: 50px; height: 50px; border-radius: 25px;' />`
+    USER_ADDED_CHAT_ICON = `<img src="https://ifamgambkuryhnqajjsw.supabase.co/storage/v1/object/public/impact-bucket/${styles.chat_icon}" style='width: 50px; height: 50px; border-radius: 25px;' />`
   }
 
   const iconColor = getContrastingTextColor(
