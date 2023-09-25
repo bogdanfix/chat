@@ -15,7 +15,7 @@ chat.style.borderColor = '#DDDDDD'
 embedParent.appendChild(chat)
 
 chat.innerHTML = `<iframe
-src="https://impact.bfix.dev/chatbot/${scriptTag.id}/embed"
+src="https://getimpact.ai/chatbot/${scriptTag.id}/embed"
 width="100%"
 height="100%"
 frameborder="0"

@@ -125,7 +125,7 @@ chat.style.overflow = 'hidden'
 document.body.appendChild(chat)
 
 chat.innerHTML = `<iframe
-src="https://impact.bfix.dev/chatbot/${scriptTag.id}/embed"
+src="https://getimpact.ai/chatbot/${scriptTag.id}/embed"
 width="100%"
 height="100%"
 frameborder="0"
@@ -151,7 +151,7 @@ handleChatWindowSizeChange(mediaQuery)
 
 const getChatbotStyles = async () => {
   const response = await fetch(
-    `https://impact.bfix.dev/api/chatbot/styles?id=${scriptTag.id}`,
+    `https://getimpact.ai/api/chatbot/styles?id=${scriptTag.id}`,
     {
       method: 'GET',
       headers: {
