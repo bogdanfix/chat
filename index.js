@@ -364,12 +364,4 @@ async function embedImpactBubble() {
   }
 }
 
-if (document.readyState === "complete") {
-
-  embedImpactBubble();
-
-} else {
-
-  window.addEventListener('load', embedImpactBubble());
-
-}
+window.addEventListener('load', embedImpactBubble());
