@@ -190,7 +190,7 @@ async function embedImpactBubble() {
     document.body.appendChild(chatButton)
 
     if (styles.chat_icon) {
-      USER_ADDED_CHAT_ICON = `<img src="https://ifamgambkuryhnqajjsw.supabase.co/storage/v1/object/public/impact-bucket/${styles.chat_icon}" style='width: 50px; height: 50px; border-radius: 25px;' />`
+      USER_ADDED_CHAT_ICON = `<img src="https://storage.getimpact.ai/storage/v1/object/public/impact-bucket/${styles.chat_icon}" style='width: 50px; height: 50px; border-radius: 25px;' />`
     }
 
     const iconColor = getContrastingTextColor(

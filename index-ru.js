@@ -131,7 +131,7 @@ async function embedImpactBubble() {
   document.body.appendChild(chat)
 
   chat.innerHTML = `<iframe
-  src="https://app.wisechat.ru/chatbot/${scriptTag.id}/embed"
+  src="https://getimpact.ai/ru-RU/chatbot/${scriptTag.id}/embed"
   width="100%"
   height="100%"
   frameborder="0"
@@ -157,7 +157,7 @@ async function embedImpactBubble() {
 
   const getChatbotStyles = async () => {
     const response = await fetch(
-      `https://app.wisechat.ru/api/chatbot/styles?id=${scriptTag.id}`,
+      `https://getimpact.ai/ru-RU/api/chatbot/styles?id=${scriptTag.id}`,
       {
         method: 'GET',
         headers: {
@@ -190,7 +190,7 @@ async function embedImpactBubble() {
     document.body.appendChild(chatButton)
 
     if (styles.chat_icon) {
-      USER_ADDED_CHAT_ICON = `<img src="https://ifamgambkuryhnqajjsw.supabase.co/storage/v1/object/public/impact-bucket/${styles.chat_icon}" style='width: 50px; height: 50px; border-radius: 25px;' />`
+      USER_ADDED_CHAT_ICON = `<img src="https://storage.getimpact.ai/storage/v1/object/public/impact-bucket/${styles.chat_icon}" style='width: 50px; height: 50px; border-radius: 25px;' />`
     }
 
     const iconColor = getContrastingTextColor(

@@ -25,7 +25,7 @@ async function embedImpactOnpage() {
 	embedParent.appendChild(chat)
 
 	chat.innerHTML = `<iframe
-	src="https://app.wisechat.ru/chatbot/${scriptTag.id}/embed"
+	src="https://getimpact.ai/ru-RU/chatbot/${scriptTag.id}/embed"
 	width="100%"
 	height="100%"
 	frameborder="0"
