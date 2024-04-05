@@ -10,6 +10,7 @@ async function embedImpactOnpage() {
 	}
 
 	const scriptTag = document.currentScript
+  const locale = ( scriptTag.lang && scriptTag.lang.length !== 0 && scriptTag.lang !== 'en' ) ? '/' + scriptTag.lang : '';
 
 	const chat = document.createElement('div')
 	chat.setAttribute('id', 'impact-embed-child')
@@ -25,7 +26,7 @@ async function embedImpactOnpage() {
 	embedParent.appendChild(chat)
 
 	chat.innerHTML = `<iframe
-	src="https://getimpact.ai/chatbot/${scriptTag.id}/embed"
+	src="https://getimpact.ai/${locale}chatbot/${scriptTag.id}/embed"
 	width="100%"
 	height="100%"
 	frameborder="0"
