@@ -8,7 +8,7 @@ async function embedImpactBubble() {
   const CHAT_BUTTON_RADIUS = CHAT_BUTTON_SIZE / 2 // radius of the chat button in pixels
   const CHAT_BUTTON_BACKGROUND_COLOR = 'black' // background color of the chat button
   const scriptTag = document.currentScript
-  const locale = ( scriptTag.lang && scriptTag.lang.length !== 0 && scriptTag.lang !== 'en' ) ? '/' + scriptTag.lang : '';
+  const locale = ( scriptTag.lang && scriptTag.lang.length !== 0 && scriptTag.lang !== 'en' ) ? scriptTag.lang + '/' : '';
   let ICON_COLOR = 'white'
   let USER_ADDED_CHAT_ICON = null
   let has_been_opened = false

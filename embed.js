@@ -10,7 +10,7 @@ async function embedImpactOnpage() {
 	}
 
 	const scriptTag = document.currentScript
-  const locale = ( scriptTag.lang && scriptTag.lang.length !== 0 && scriptTag.lang !== 'en' ) ? '/' + scriptTag.lang : '';
+  const locale = ( scriptTag.lang && scriptTag.lang.length !== 0 && scriptTag.lang !== 'en' ) ? scriptTag.lang + '/' : '';
 
 	const chat = document.createElement('div')
 	chat.setAttribute('id', 'impact-embed-child')
